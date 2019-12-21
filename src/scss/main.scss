@@ -2,15 +2,21 @@
 @import './base/fonts';
 
 @import './layout/header.scss';
+@import './layout/section-promo.scss';
 
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
-  background: green;
-  padding-top: 2rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+html {
+  font-size: 16px;
+
+  @media(max-width: $medium) {
+    font-size: 14px;
+  }
+}
+
+.visible {
+  display: block !important;
 }

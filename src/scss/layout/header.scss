@@ -1,0 +1,38 @@
+@import '../components/logo.scss';
+@import '../components/menu.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-container {
+    padding-top: 2.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 10rem;
+    background: url('~../assets/img/block1-background.png') no-repeat;
+    background-color: #989898;
+    background-position: top;
+    background-size: cover;
+
+    @media(max-width: $huge) {
+      display: block;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    @media(max-width: $medium) {
+      display: block;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 2.1rem;
+    }
+    
+  }
+
+  &__contact {
+    color: $color1;
+    font-family: "PF Encore Sans Pro",sans-serif;
+  }
+}
