@@ -3,11 +3,11 @@
   border-radius: 1rem;
   max-width: 350px;
   min-width: 320px;
-  border: 2px solid $color2;
+  border: 2px solid $coral;
   display: flex;
   flex-direction: column;
   padding: 1.5rem 2.5rem 1rem 2.5rem;
-  background-color: #ffffff;
+  background-color: $dirty-white;
   font-family: "Gotham Pro", sans-serif;
   text-align: center;
 
@@ -28,7 +28,7 @@
   }
 
   &__input-container {
-    border: 1px solid $inputBorderColor;
+    border: 1px solid $input-border-color;
     position: relative;
     margin-bottom: 1.3rem;
     height: 3.1rem;
@@ -41,7 +41,7 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     font-size: 0.8rem;
-    background: #ffffff;
+    background: $dirty-white;
   }
 
   &__input {
@@ -55,6 +55,7 @@
     font-size: 1rem;
     border: none;
     outline: none;
+    background: $dirty-white; /*добавил серый фон*/
   }
 
   &__button {

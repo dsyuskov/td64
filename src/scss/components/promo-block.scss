@@ -2,7 +2,7 @@
 
 .promo-block {
   text-align: center;
-  color: $color1;
+  color: $white;
   font-family: "Gotham Pro", sans-serif;
   max-width: 400px;
   min-width: 320px;
@@ -13,7 +13,7 @@
   }
 
   &__head {
-    color: $color2;
+    color: $coral;
     letter-spacing: -1px;
     font-size: 2.2rem;
     line-height: 2.5rem;
@@ -29,7 +29,7 @@
     span {
       display: block;
       letter-spacing: -0.5px;
-      color: $color1;
+      color: $white;
     }
   }
 
