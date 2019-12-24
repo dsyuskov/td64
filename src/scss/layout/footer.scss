@@ -2,14 +2,14 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
     padding: 1rem;
     background: url('~../assets/img/footer-background.png') no-repeat;
-    background-size: cover;
+    background-size: cover; 
+    background-position: center; /*Фон при сжатии по центру*/
+    background-color: #989898; /*Фоновый цвет. Добавить в переменные?)*/
     height: 15.6rem;
   
   &-left {
-    box-sizing: border-box;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -19,11 +19,8 @@
   }
 
   &-logo {
-    box-sizing: border-box;
     width: 40%;
-    display: flex;
     flex-direction: column;
-    text-align: center;
     /*border: 2px solid $coral;*/
     &__year {
         font-size: 1rem;
@@ -31,15 +28,27 @@
         line-height: 1.5rem;
         margin-top: 1rem;
     }
+    span {
+      margin-top: 0.5rem; /*отступ от логотипа*/
+    }
   }
 
   &-right {
-    box-sizing: border-box;
     width: 30%;
     display: flex;
     flex-direction: column;
     text-align: right;
     /*border: 2px solid $coral;
     height: 60px;*/
+  }
+
+  @media(max-width: $large) {  /*При сжатии в колонку*/
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  @media(max-width: $medium) { /*Но надо ли?*/
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
