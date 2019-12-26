@@ -41,8 +41,6 @@
     height: 100%;
     left: 162px;
     right: 162px;
-    padding-left: 80px;
-    padding-right: 80px;
     color: $white;
     font-weight: 100;
     line-height: 2rem;
@@ -55,10 +53,18 @@
 
   &--left {
     justify-content: flex-start;
+
+    .advantage__text {
+      padding-left: 80px;
+    }
   }
 
   &--right {
     justify-content: flex-end;
+
+    .advantage__text {
+      padding-right: 80px;
+    }
   }
 }
 
