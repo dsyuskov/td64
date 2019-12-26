@@ -1,5 +1,28 @@
 @import '../components/advantage.scss';
 
 .advantages {
-  height: 500px;
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-size: 1.4rem;
+  font-family: "PF Encore Sans Pro",sans-serif;
+  background: url('~../assets/img/background-advantage.png') no-repeat;
+  background-size: cover; 
+  background-position: right top;
+  background-color: $document-background-color;
+
+  &__head {
+    text-align: center;
+    text-transform: uppercase;
+    color: $coral;
+    line-height: 2.8rem;
+    letter-spacing: 0.5px;
+    padding-bottom: 3rem;
+
+    span {
+      display: block;
+      color: $white;
+      font-weight: 300;
+    }
+  }
 }

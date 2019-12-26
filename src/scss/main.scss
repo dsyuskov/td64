@@ -19,6 +19,14 @@ html {
   }
 }
 
+.container {
+  max-width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
 .visible {
- visibility: visible !important;
+  visibility: visible !important;
 }

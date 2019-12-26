@@ -1,35 +1,89 @@
 .advantage {
+  box-sizing: border-box;
   position: relative;
   display: flex;
-  border-bottom: 4px solid red;
 
   &__line {
     position: absolute;
-    left: 140px;
-    bottom: 15px;
-    width: 38px;
-    border: 2px solid red;
-    transform: rotate(60deg);
+    width: 34px;
+    border: 1px solid $coral;
+
+    &--bottom-right {
+      transform: rotate(60deg);
+      left: 136px;
+      bottom: 15px;
+    }
+
+    &--bottom-left {
+      transform: rotate(-60deg);
+      right: 136px;
+      bottom: 15px;
+    }
+
+    &--top-right {
+      transform: rotate(-60deg);
+      left: 136px;
+      top: 13px;
+    }
+
+    &--top-left {
+      transform: rotate(60deg);
+      right: 136px;
+      top: 13px;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    left: 162px;
+    right: 162px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: $white;
+    font-weight: 100;
+    line-height: 2rem;
+    border-bottom: 2px solid $coral;
+
+    &--end {
+      border: none;
+    }
+  }
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--right {
+    justify-content: flex-end;
   }
 }
 
 .hexagon {
   position: relative;
-  shape-outside: polygon(95px 0px,190px 55px,190px 165px,95px 220px,0px 165px,0px 55px);
-  clip-path: polygon(95px 0px,190px 55px,190px 165px,95px 220px,0px 165px,0px 55px);
+  // top's coordinates of hexagon
+  clip-path: polygon(95px 1px,190px 56px,190px 165px,95px 220px,0px 165px,0px 56px);
   width: 190px;
   height: 222px;
-  background: url('~../assets/img/footer-background.png');
-  color: 2px solid red;
+  color: 2px solid $coral;
+
+  &__img {
+    overflow: hidden;
+    width: 190px;
+    height: 222px;
+  }
 
   &__border {
     position: absolute;
     box-sizing: border-box;
     width: 190px;
     height: 110px;
-    top: 55px;
-    border-right: 3px solid red;
-    border-left: 3px solid red;
+    top: 56px;
+    border-right: 3px solid $coral;
+    border-left: 3px solid $coral;
 
     &--rotate-left {
       transform: rotate(-60deg);
