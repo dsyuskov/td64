@@ -1,0 +1,43 @@
+.greeting {
+    padding: 5rem 0;
+    font-family: "Gotham Pro", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 5rem 0;  
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;    
+    }
+
+    &__title:before {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 30px;
+        background-color: $coral;
+        margin-right: 10px;
+    }
+
+    &__button {
+        height: 40px;
+        width: 200px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        font-size: large;
+    }
+
+
+
+}
+
+
